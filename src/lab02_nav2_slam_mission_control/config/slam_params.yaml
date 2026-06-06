@@ -1,0 +1,53 @@
+slam_toolbox:
+  ros__parameters:
+    use_sim_time: true
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver_type: SPARSE_NORMAL_CHOLESKY
+    ceres_linear_solver_threads: 1
+    ceres_threads: 1
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: NULL
+
+    # ROS Parameters
+    map_frame: map
+    odom_frame: odom
+    base_frame: base_link
+    scan_topic: /scan
+    mode: mapping #localization
+
+    # if you'd like to immediately start continuing a map at a given pose
+    # or at the dock, but they are the same location, you can set this to true
+    # if they are different, you will want to amcl neighbor search to find the
+    # location that you are in on the map, then figure out its the same
+    # transform initially.
+    # This will be set after SLAM is complete one run.
+    continue_previous_session: false
+
+    # Maximum number of nodes to retain in buffer
+    max_nodes_to_retain: 2000
+    interactive_mode: true
+    transform_publish_period: 0.02 #default 0.02
+
+    # KARTO Parameters
+    use_scan_matching: true
+    use_scan_bagging: true
+    minimum_time_interval: 0.5
+    minimum_travel_distance: 0.2
+    minimum_rotation_degrees: 10.0
+    scan_buffer_size: 10
+    scan_buffer_discount: 0.3
+    scan_matcher_penalty_multiplier: 0.02
+    clock_skip_threshold: 1.0
+    response_timeout: 500.0
+
+    # Correlation Parameters - Correlation Parameters
+    search_space_size: 8
+    search_space_dimension: 0.05
+    distance_variance_penalty: 0.5
+    angle_variance_penalty: 1.0
+    fine_search_angle_offset: 0.00349
+    coarse_search_angle_offset: 0.349
+    coarse_angle_resolution: 0.0349
+    minimum_angle_penalty: 0.9
+    minimum_distance_penalty: 0.5
+    use_response_expansion: true

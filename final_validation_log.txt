@@ -1,0 +1,113 @@
+ROS 2 Aroma Diffuser Robot V2 - Final Validation Log
+Generated on: Sat Jun  6 03:40:04 UTC 2026
+
+=== Packages ===
+lab01_ros2_basics
+lab02_nav2_slam_mission_control
+lab03_aroma_diffuser_robot_mission
+
+=== Executables ===
+lab01_ros2_basics publisher_node
+lab01_ros2_basics subscriber_node
+lab02_nav2_slam_mission_control mission_controller_node
+lab02_nav2_slam_mission_control robot_location_monitor_node
+lab03_aroma_diffuser_robot_mission aroma_diffuser_node
+lab03_aroma_diffuser_robot_mission aroma_mission_node
+
+=== Lab 1 Launch Test ===
+[INFO] [launch]: All log files can be found below /home/codespace/.ros/log/2026-06-06-03-40-06-625038-codespaces-f0d0c0-55785
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [publisher_node-1]: process started with pid [55796]
+[INFO] [subscriber_node-2]: process started with pid [55797]
+[subscriber_node-2] [INFO] [1780717207.494251857] [subscriber]: Subscriber started
+[publisher_node-1] [INFO] [1780717207.504758236] [publisher]: Publisher started
+[subscriber_node-2] [INFO] [1780717208.469990445] [subscriber]: Received message: Publishing message: Robot Status #1 - System OK
+[subscriber_node-2] [INFO] [1780717208.470678749] [subscriber]: Communication successful
+[publisher_node-1] [INFO] [1780717208.471700145] [publisher]: Publishing message: Publishing message: Robot Status #1 - System OK
+[publisher_node-1] [INFO] [1780717209.469639212] [publisher]: Publishing message: Publishing message: Robot Status #2 - System OK
+[subscriber_node-2] [INFO] [1780717209.471363740] [subscriber]: Received message: Publishing message: Robot Status #2 - System OK
+[subscriber_node-2] [INFO] [1780717209.472216040] [subscriber]: Communication successful
+[publisher_node-1] [INFO] [1780717210.469757394] [publisher]: Publishing message: Publishing message: Robot Status #3 - System OK
+[subscriber_node-2] [INFO] [1780717210.470988612] [subscriber]: Received message: Publishing message: Robot Status #3 - System OK
+[subscriber_node-2] [INFO] [1780717210.471629778] [subscriber]: Communication successful
+[publisher_node-1] [INFO] [1780717211.469702016] [publisher]: Publishing message: Publishing message: Robot Status #4 - System OK
+[subscriber_node-2] [INFO] [1780717211.469873533] [subscriber]: Received message: Publishing message: Robot Status #4 - System OK
+[subscriber_node-2] [INFO] [1780717211.470531100] [subscriber]: Communication successful
+[publisher_node-1] [INFO] [1780717212.469617820] [publisher]: Publishing message: Publishing message: Robot Status #5 - System OK
+[subscriber_node-2] [INFO] [1780717212.471047789] [subscriber]: Received message: Publishing message: Robot Status #5 - System OK
+[subscriber_node-2] [INFO] [1780717212.471669539] [subscriber]: Communication successful
+[publisher_node-1] [INFO] [1780717213.473334639] [publisher]: Publishing message: Publishing message: Robot Status #6 - System OK
+[subscriber_node-2] [INFO] [1780717213.478928918] [subscriber]: Received message: Publishing message: Robot Status #6 - System OK
+[subscriber_node-2] [INFO] [1780717213.485257147] [subscriber]: Communication successful
+
+=== Lab 2 Mission Launch Test ===
+[INFO] [launch]: All log files can be found below /home/codespace/.ros/log/2026-06-06-03-40-14-646611-codespaces-f0d0c0-55930
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [mission_controller_node-1]: process started with pid [55944]
+[INFO] [robot_location_monitor_node-2]: process started with pid [55945]
+[robot_location_monitor_node-2] [INFO] [1780717215.360900586] [robot_location_monitor]: Robot location monitor started
+[mission_controller_node-1] [INFO] [1780717215.490873322] [mission_controller]: Goal Sent
+[mission_controller_node-1] [INFO] [1780717215.491849714] [mission_controller]: Obstacle avoidance enabled
+[robot_location_monitor_node-2] [INFO] [1780717216.362392262] [robot_location_monitor]: Robot location update: Robot at X=1.75, Y=0.96, Theta=0.50
+[mission_controller_node-1] [INFO] [1780717216.363019094] [mission_controller]: Location received: Robot at X=1.75, Y=0.96, Theta=0.50
+[robot_location_monitor_node-2] [INFO] [1780717217.362224523] [robot_location_monitor]: Robot location update: Robot at X=1.08, Y=1.68, Theta=1.00
+[mission_controller_node-1] [INFO] [1780717217.363582437] [mission_controller]: Location received: Robot at X=1.08, Y=1.68, Theta=1.00
+[robot_location_monitor_node-2] [INFO] [1780717218.362186622] [robot_location_monitor]: Robot location update: Robot at X=0.14, Y=2.00, Theta=1.50
+[mission_controller_node-1] [INFO] [1780717218.363640608] [mission_controller]: Location received: Robot at X=0.14, Y=2.00, Theta=1.50
+[mission_controller_node-1] [INFO] [1780717218.492708503] [mission_controller]: Goal Reached
+[robot_location_monitor_node-2] [INFO] [1780717219.362198657] [robot_location_monitor]: Robot location update: Robot at X=-0.83, Y=1.82, Theta=2.00
+[mission_controller_node-1] [INFO] [1780717219.363641281] [mission_controller]: Location received: Robot at X=-0.83, Y=1.82, Theta=2.00
+[robot_location_monitor_node-2] [INFO] [1780717220.362350793] [robot_location_monitor]: Robot location update: Robot at X=-1.60, Y=1.20, Theta=2.50
+[mission_controller_node-1] [INFO] [1780717220.362452505] [mission_controller]: Location received: Robot at X=-1.60, Y=1.20, Theta=2.50
+[robot_location_monitor_node-2] [INFO] [1780717221.362555186] [robot_location_monitor]: Robot location update: Robot at X=-1.98, Y=0.28, Theta=3.00
+[mission_controller_node-1] [INFO] [1780717221.362670785] [mission_controller]: Location received: Robot at X=-1.98, Y=0.28, Theta=3.00
+[mission_controller_node-1] [INFO] [1780717221.492966922] [mission_controller]: Robot location update: X=2.0, Y=2.0
+[robot_location_monitor_node-2] [INFO] [1780717222.362175400] [robot_location_monitor]: Robot location update: Robot at X=-1.87, Y=-0.70, Theta=3.50
+[mission_controller_node-1] [INFO] [1780717222.363901471] [mission_controller]: Location received: Robot at X=-1.87, Y=-0.70, Theta=3.50
+[robot_location_monitor_node-2] [INFO] [1780717223.362263155] [robot_location_monitor]: Robot location update: Robot at X=-1.31, Y=-1.51, Theta=4.00
+[mission_controller_node-1] [INFO] [1780717223.363452004] [mission_controller]: Location received: Robot at X=-1.31, Y=-1.51, Theta=4.00
+[mission_controller_node-1] [INFO] [1780717224.364523719] [mission_controller]: Location received: Robot at X=-0.42, Y=-1.96, Theta=4.50
+[robot_location_monitor_node-2] [INFO] [1780717224.364653889] [robot_location_monitor]: Robot location update: Robot at X=-0.42, Y=-1.96, Theta=4.50
+[mission_controller_node-1] [INFO] [1780717224.492840141] [mission_controller]: Navigating to next waypoint...
+[robot_location_monitor_node-2] [INFO] [1780717225.362210401] [robot_location_monitor]: Robot location update: Robot at X=0.57, Y=-1.92, Theta=5.00
+[mission_controller_node-1] [INFO] [1780717225.362501767] [mission_controller]: Location received: Robot at X=0.57, Y=-1.92, Theta=5.00
+
+=== Lab 3 Aroma Mission Launch Test ===
+[INFO] [launch]: All log files can be found below /home/codespace/.ros/log/2026-06-06-03-40-26-980442-codespaces-f0d0c0-56127
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [aroma_diffuser_node-1]: process started with pid [56131]
+[INFO] [aroma_mission_node-2]: process started with pid [56132]
+[aroma_diffuser_node-1] [INFO] [1780717227.671246962] [aroma_diffuser]: Aroma Diffuser Node started
+[aroma_mission_node-2] [INFO] [1780717227.699008621] [aroma_mission]: Starting Mission
+[aroma_mission_node-2] [INFO] [1780717228.700016735] [aroma_mission]: At Home - Mission initialized
+[aroma_mission_node-2] [INFO] [1780717229.700240695] [aroma_mission]: Navigating to Target 1
+[aroma_mission_node-2] [INFO] [1780717230.700205521] [aroma_mission]: Navigating to Target 1
+[aroma_mission_node-2] [INFO] [1780717231.700042569] [aroma_mission]: Goal Reached - Target 1
+[aroma_mission_node-2] [INFO] [1780717232.700535652] [aroma_mission]: Diffuser ON
+[aroma_diffuser_node-1] [INFO] [1780717232.700842972] [aroma_diffuser]: Diffuser ON
+[aroma_mission_node-2] [INFO] [1780717234.699954862] [aroma_mission]: Waiting - Diffuser active
+[aroma_mission_node-2] [INFO] [1780717235.700025366] [aroma_mission]: Waiting - Diffuser active
+[aroma_mission_node-2] [INFO] [1780717236.700023392] [aroma_mission]: Diffuser OFF
+[aroma_diffuser_node-1] [INFO] [1780717236.702781158] [aroma_diffuser]: Diffuser OFF
+[aroma_mission_node-2] [INFO] [1780717237.700278179] [aroma_mission]: Navigating to Target 2
+[aroma_mission_node-2] [INFO] [1780717238.700044235] [aroma_mission]: Navigating to Target 2
+[aroma_mission_node-2] [INFO] [1780717239.700185120] [aroma_mission]: Goal Reached - Target 2
+[aroma_mission_node-2] [INFO] [1780717240.700034892] [aroma_mission]: Diffuser ON
+[aroma_diffuser_node-1] [INFO] [1780717240.701331501] [aroma_diffuser]: Diffuser ON
+[aroma_mission_node-2] [INFO] [1780717242.699971898] [aroma_mission]: Waiting - Diffuser active
+[aroma_mission_node-2] [INFO] [1780717243.700019199] [aroma_mission]: Waiting - Diffuser active
+
+=== Graphical Launch File Check ===
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'world':
+        no description given
+        (default: '/workspaces/ros2_aroma_diffuser_robot_v2/install/share/lab02_nav2_slam_mission_control/worlds/indoor_world.world')
+Arguments (pass arguments as '<name>:=<value>'):
+
+  No arguments.
+Arguments (pass arguments as '<name>:=<value>'):
+
+  No arguments.
+
+Validation completed.

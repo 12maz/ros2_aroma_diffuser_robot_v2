@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>lab01_ros2_basics</name>
+  <version>0.0.1</version>
+  <description>Lab 1: ROS 2 Basics - Publisher and Subscriber</description>
+  <maintainer email="ros2@example.com">ROS 2 Developer</maintainer>
+  <license>Apache License 2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

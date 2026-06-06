@@ -216,3 +216,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code / system files
+.vscode/
+.DS_Store
+
+# Repair temporary backups
+backup_before_repair_*/

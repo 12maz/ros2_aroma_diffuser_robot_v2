@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<rviz version="2.14.8">
+  <property name="Background Color" value="48; 48; 48"/>
+  <property name="Fixed Frame" value="map"/>
+  <property name="Frame Rate" value="30"/>
+  <property name="Grid" value="true"/>
+  <property name="Panel Height" value="850"/>
+  <property name="Panel Width" value="1550"/>
+  <property name="Property Tree Widget Expanded" value="./Enabled"/>
+  <property name="Show Grid" value="true"/>
+  <property name="Show Help" value="false"/>
+  <property name="Status Bar" value="true"/>
+  <property name="Tool Icon Size" value="64"/>
+  <property name="Tool Pad" value="false"/>
+  <property name="Top-Level Geometry" value="1550, 878"/>
+  <property name="Top-Level X" value="70"/>
+  <property name="Top-Level Y" value="58"/>
+  <property name="Use Fixed Frame" value="true"/>
+  <property name="Value" value="false"/>
+  <property name="Verbose Output" value="false"/>
+  <property name="Visualization Manager" value="manager"/>
+  <property name="Class" value=""/>
+  <viewpoint>
+    <name>Current View</name>
+    <X>0</X>
+    <Y>0</Y>
+    <Z>15</Z>
+    <Focal Point X>0</Focal Point>
+    <Focal Point Y>0</Focal Point>
+    <Focal Point Z>0</Focal Point>
+  </viewpoint>
+  <tool name="Interact">
+    <property name="Shortcut Key" value="i"/>
+  </tool>
+  <tool name="Move Camera">
+    <property name="Shortcut Key" value="m"/>
+  </tool>
+  <tool name="Select">
+    <property name="Shortcut Key" value="s"/>
+  </tool>
+  <tool name="2D Nav Goal">
+    <property name="Shortcut Key" value="g"/>
+  </tool>
+  <tool name="Publish Point">
+    <property name="Shortcut Key" value="p"/>
+  </tool>
+  <tool name="Measure">
+    <property name="Shortcut Key" value="t"/>
+  </tool>
+  <tool name="Set Initial Pose">
+    <property name="Topic" value="/initialpose"/>
+  </tool>
+  <display name="Grid">
+    <property name="Cell Size" value="1"/>
+    <property name="Class Name" value="rviz_default_plugins/Grid"/>
+    <property name="Color" value="160; 160; 164"/>
+    <property name="Enabled" value="true"/>
+    <property name="Line Style" value="Line"/>
+    <property name="Line Width" value="0.03"/>
+    <property name="Name" value="Grid"/>
+    <property name="Normal Cell Count" value="0"/>
+    <property name="Offset" value="0; 0; 0"/>
+    <property name="Plane" value="XY"/>
+    <property name="Plane Cell Count" value="10"/>
+    <property name="Reference Frame" value="&lt;Fixed Frame&gt;"/>
+    <property name="Value" value="true"/>
+  </display>
+  <display name="Map">
+    <property name="Alpha" value="0.7"/>
+    <property name="Class Name" value="rviz_default_plugins/Map"/>
+    <property name="Color Scheme" value="map"/>
+    <property name="Draw Behind" value="false"/>
+    <property name="Enabled" value="true"/>
+    <property name="Name" value="Map"/>
+    <property name="Topic" value="/map"/>
+    <property name="Unreliable" value="false"/>
+    <property name="Use Timestamp" value="false"/>
+    <property name="Value" value="true"/>
+  </display>
+  <display name="Costmap">
+    <property name="Alpha" value="0.5"/>
+    <property name="Class Name" value="rviz_default_plugins/Costmap"/>
+    <property name="Color" value="200; 130; 0"/>
+    <property name="Enabled" value="true"/>
+    <property name="Name" value="Costmap"/>
+    <property name="Topic" value="/global_costmap/costmap"/>
+    <property name="Unreliable" value="false"/>
+    <property name="Use Timestamp" value="false"/>
+    <property name="Value" value="true"/>
+  </display>
+  <display name="TF">
+    <property name="All Enabled" value="true"/>
+    <property name="Class Name" value="rviz_default_plugins/TF"/>
+    <property name="Enable All" value="true"/>
+    <property name="Enabled" value="true"/>
+    <property name="Frame Timeout" value="15"/>
+    <property name="Frames" value=""/>
+    <property name="Name" value="TF"/>
+    <property name="Show Arrows" value="true"/>
+    <property name="Show Axes" value="true"/>
+    <property name="Show Names" value="false"/>
+    <property name="Tree" value=""/>
+    <property name="Update Interval" value="0"/>
+    <property name="Value" value="true"/>
+  </display>
+</rviz>
